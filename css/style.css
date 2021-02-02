@@ -33,6 +33,7 @@ body {
     padding: 1em;
     font-size: 87.5%;
     line-height: 1.5em;
+    background-color: rgb(255, 245, 232);
 }
 
 h1 {
@@ -181,18 +182,18 @@ a.button:hover {
 }
 
 .thumbgrid a {
-    width: 49.5%;
+    width: 50%;
 }
 
 @media (min-width:768px) {
     .thumbgrid a {
-        width: 24.5%;
+        width: 50%;
     }
 }
 
 .thumbgrid a img {
-    width: 24.5vh;
-    height: 20vh;
+    width: 42vh;
+    height: 30vh;
     filter: brightness(1.05);
     transition: all ease-in-out 0.2s;
     border: 1px solid rgba(255,255,255,0);
