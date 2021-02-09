@@ -19,10 +19,7 @@
         #SECTIONS
         #SUB PAGES
 --------------------------------- */
-/* #HTML5 */
-header, section, footer, aside, nav, main, article, figure {
-  display: block;
-}
+*{box-sizing: border-box;}
 
 /* #TYPOGRAPHY  */
 body {
@@ -266,4 +263,46 @@ fade-in {
 }
 .fade-and-move-in *:nth-child(9) {
   animation-delay: 1.8s;
+}
+
+
+/* .full-width {
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+} */
+
+.image {
+  position: absolute;
+  left: 10%;
+  top: 0%;
+  bottom: 0%;
+  right: 0%;
+  animation: movetxt 15s linear infinite;
+}
+
+@keyframes movetxt {
+  from {
+    left: 0px;
+  }
+  to {
+    left: -4000px;
+  }
+}
+
+/* Swiper */
+
+.swiper-container {
+  width: 100%;
+  /* height: 100%; */
+  background-color: pink;
+
+}
+
+.swiper-slide {
+
+  /* Center slide text vertically */
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

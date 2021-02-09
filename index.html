@@ -12,7 +12,8 @@
 
     <!-- VIEWPORT FOR MOBILE -->
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-
+    <!-- swiper -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
     <!-- MAIN CSS FILE -->
     <link href="css/style.css" rel="stylesheet" type="text/css" />
 
@@ -29,7 +30,7 @@
         <nav class="site-navigation">
             <ul>
                 <li class="selected">
-                    <a href="index.html#work" class="selected">Work</a>
+                    <a href="Work.html#work">Work</a>
                 </li>
                 <li>
                     <a href="about.html">About</a>
@@ -41,11 +42,11 @@
         </nav>
     </header>
 
-    <main class="site-main fade-and-move-in">
+    <main class="Move">
 
-        <section id="work" class="text-centered">
+        <!-- <section id="work" class="container">
 
-            <div class="thumbgrid">
+            <div class="image">
                 <a href="bookcover.html">
                     <img src="img/bookcover_home.jpg" alt="placeholder" />
                 </a>
@@ -66,8 +67,33 @@
                 </a>
             </div>
 
-        </section>
+        </section> -->
 
+        <section id="work" class="full-width">
+
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><a href="bookcover.html">
+                            <img src="img/bookcover_home.jpg" alt="placeholder" />
+                        </a></div>
+                    <div class="swiper-slide"> <a href="brochure.html">
+                            <img src="img/Brochure_home.jpg" alt="placeholder" />
+                        </a></div>
+                    <div class="swiper-slide"><a href="tourismlogo.html">
+                            <img src="img/Yiwen_CityLogo-home.jpg" alt="placeholder" />
+                        </a></div>
+                    <div class="swiper-slide"><a href="branding.html">
+                            <img src="img/polarpop_cover.jpg" alt="placeholder" />
+                        </a></div>
+                    <div class="swiper-slide"><a href="rotoscoping.html">
+                            <img src="img/Roto.jpg" alt="placeholder" />
+                        </a></div>
+                    <div class="swiper-slide"><a href="olyphic.html">
+                            <img src="img/Olyphic_2.jpg" alt="placeholder" />
+                        </a></div>
+                </div>
+            </div>
+        </section>
     </main>
 
     <footer class="site-footer fade-and-move-in">
@@ -75,6 +101,9 @@
             <ul>
                 <li>
                     <a href="index.html">Home</a>
+                </li>
+                <li>
+                    <a href="Work.html">Work</a>
                 </li>
                 <li>
                     <a href="about.html">About</a>
@@ -86,6 +115,22 @@
         </nav>
 
     </footer>
+
+    <!-- swiper -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <script type="module">
+        import Swiper from 'https://unpkg.com/swiper/swiper-bundle.esm.browser.min.js'
+
+        var swiper = new Swiper('.swiper-container', {
+
+            centeredSlides: true,
+            autoplay: {
+                delay: 2500,
+                disableOnInteraction: false,
+            },
+        });
+    </script>
 
 </body>
 
