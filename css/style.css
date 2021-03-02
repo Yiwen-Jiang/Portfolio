@@ -24,17 +24,17 @@
 /* #TYPOGRAPHY  */
 body {
     font-family: Helvetica, Arial, sans-serif;
-    color: rgba(0,0,0,.7);;
-    max-width: 1000px;
-    margin: 0 auto;
-    padding: 1em;
+    margin: 0;
+    color: rgba(0,0,0,.7);
     font-size: 87.5%;
     line-height: 1.5em;
     background-color: rgb(255, 245, 232);
+    margin-top: 4em;
 }
 
 h1 {
     font-size: 3em;
+    line-height: normal;
 }
 
 /* #LINKS */
@@ -65,12 +65,7 @@ a:hover {
 }
 
 .full-width {
-  width: 100vw;
   position: relative;
-  left: 50%;
-  right: 50%;
-  margin-left: -50vw;
-  margin-right: -50vw;
 }
 
 .full-width img {
@@ -105,7 +100,18 @@ a.button:hover {
 
 /* SITE-STRUCTURE */
 
-.site-header,
+.site-header {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  position: fixed;
+  z-index: 300;
+  top: 0;
+  padding: 0.5em;
+}
+
 .site-footer {
     text-align: center;
     padding: 3em 0 2em 0;
@@ -121,7 +127,7 @@ a.button:hover {
 
 .site-navigation ul {
     margin: 0;
-    padding: 2em 0;
+    padding: 0;
 }
 
 .site-navigation li {
@@ -173,9 +179,8 @@ a.button:hover {
 
 /* #THUMBGRID */
 .thumbgrid {
-    display: flex;
-	flex-wrap: wrap;
-    justify-content: space-between;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .thumbgrid a {
@@ -189,8 +194,8 @@ a.button:hover {
 }
 
 .thumbgrid a img {
-    width: 42vh;
-    height: 30vh;
+    width: 50vh;
+    height: 50vh;
     filter: brightness(1.05);
     transition: all ease-in-out 0.2s;
     border: 1px solid rgba(255,255,255,0);
@@ -308,4 +313,26 @@ fade-in {
 
 .swiper-slide img {
   display: block;
+}
+
+.sticky {
+  position: sticky;
+  top:0;
+  margin-left: 2.5em;
+}
+
+.two-column {
+  max-width: 1500px;
+  display: flex;
+  padding: 0 1em;
+  margin: auto;
+}
+
+.left {
+  width: 75%;
+  margin-top: 2em;
+}
+
+.right {
+  width: 25%;
 }
