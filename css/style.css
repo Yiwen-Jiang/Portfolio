@@ -76,6 +76,7 @@ a:hover {
 img {
   max-width: 100%;
   height: auto;
+  padding: 0 0 1.25em 0;
 }
 
 img.circular {
@@ -105,16 +106,27 @@ a.button:hover {
   width: 100%;
   justify-content: space-between;
   align-items: center;
-  background-color: white;
+  background-color: rgb(255, 245, 232);
   position: fixed;
   z-index: 300;
   top: 0;
   padding: 0.5em;
+  box-shadow:0 0 10px 0 rgba(0,0,0,.15);
+}
+
+.site-header[data-view="visible"]{
+    transform: translateY(0);
+  }
+
+.site-header[data-view="hidden"]{
+
+  /* background-color: red; */
+  transform: translateY(-100%);
 }
 
 .site-footer {
     text-align: center;
-    padding: 3em 0 2em 0;
+    padding: .25em 0 1.5em 0;
     text-transform: uppercase;
     letter-spacing: 0.15em;
 }
@@ -149,8 +161,9 @@ a.button:hover {
 }
 
 /* section {
-    padding: 0 0 3em 0; */
+    padding: 0 0 3em 0; 
 }
+*/
 
 .hero {
     padding:0;
