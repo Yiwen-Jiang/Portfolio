@@ -1,5 +1,5 @@
-# student site
+# Portfolio
 
-This is a student site created for m NMA courses
+This is a my portfolio site.
 
 View my [Github Pages Hosted Site](https://yiwen-jiang.github.io/Portfolio/) 
