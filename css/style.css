@@ -35,6 +35,7 @@ body {
 h1 {
     font-size: 3em;
     line-height: normal;
+    padding: 2.5em 0 0 0;
 }
 
 /* #LINKS */
@@ -333,6 +334,7 @@ fade-in {
   position: sticky;
   top:0;
   margin-left: 2.5em;
+  max-width: 21.5em;
 }
 
 .two-column {
@@ -351,6 +353,14 @@ fade-in {
   width: 25%;
 }
 
-main.site-main.brochure {
+main.site-main.brochure, {
   background-color: white;
+}
+
+.swiper-wrapper {
+  margin: 0 0 10em 0;
+}
+
+.site-branding {
+  max-height: 3em;
 }
