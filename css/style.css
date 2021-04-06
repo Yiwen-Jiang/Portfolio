@@ -198,6 +198,11 @@ a.button:hover {
   margin-top: 7em;
 }
 
+.thumbgrid.other {
+  justify-content: center;
+  display: flex;
+}
+
 .thumbgrid a {
     width: 50%;
     padding: 2em .5em 0 .5em;
@@ -411,7 +416,10 @@ h2.subheader {
 /* SHINE */
 
 .thumbgrid figure {
-  margin: 0 0 0 0;
+  width: 50vh;
+  height: 50vh;
+  margin: 0 0.75em 1.25em 0;
+  overflow: hidden;
 }
 .thumbgrid figure::before {
 	position: absolute;
