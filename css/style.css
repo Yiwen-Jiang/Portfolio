@@ -373,19 +373,26 @@ fade-in {
 
 .two-column {
   max-width: 1500px;
-  display: flex;
   padding: 0 1em;
   margin: auto;
 }
 
-.left {
-  width: 75%;
-  margin-top: 2em;
+@media (min-width: 768px){
+  .two-column {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+
+  .left {
+    width: 75%;
+    margin-top: 2em;
+  }
+  
+  .right {
+    width: 25%;
+  }
 }
 
-.right {
-  width: 25%;
-}
 
 main.site-main.brochure {
   background-color: white;
