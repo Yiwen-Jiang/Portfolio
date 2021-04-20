@@ -449,3 +449,9 @@ h2.subheader {
 		left: 125%;
 	}
 }
+
+video {
+  margin-bottom: 25px;
+  width: 100%    !important;
+  height: auto   !important;
+}
