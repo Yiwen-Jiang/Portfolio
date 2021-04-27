@@ -344,17 +344,20 @@ img.circular {
 
 .zoom-wrapper {
   overflow: hidden;
-  width: 100vw;
+  height: 80vh;
+  width: 100%;
   position: relative;
-  left: 50%;
-  right: 50%;
-  margin-left: -50vw;
-  margin-right: -50vw;
 }
 
 /* The element to apply the animation to */
 .zoom-image {
   width: 100%;
+  display: block;
+  position: absolute;
+  height: 100%;
+  top: 0;
+  left: 0;
+  object-fit: cover;
   animation-name: zoomIn;
   animation-duration: 20s;
   animation-fill-mode: forwards;
@@ -389,10 +392,12 @@ img.circular {
 }
 
 .sticky {
+  position: -webkit-sticky;  
   position: sticky;
   top:0;
   margin-left: 2.5em;
   max-width: 24em;
+  align-self: flex-start;
 }
 
 .two-column {
@@ -490,6 +495,6 @@ video {
   height: auto   !important;
 }
 
-main.site-main {
+/* main.site-main {
   overflow-x: hidden;
-}
+} */
