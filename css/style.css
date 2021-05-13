@@ -121,7 +121,6 @@ a.button:hover {
   width: 100%;
   justify-content: space-between;
   align-items: center;
-  background-color: rgb(228, 208, 183);
   position: fixed;
   z-index: 300;
   top: 0;
@@ -498,3 +497,7 @@ video {
 /* main.site-main {
   overflow-x: hidden;
 } */
+
+.site-branding img{
+  margin: 0 0 0 0;
+}
