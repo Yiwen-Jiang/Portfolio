@@ -119,6 +119,7 @@ a.button:hover {
 .site-header {
   display: flex;
   width: 100%;
+  background-color: rgb(228, 208, 183);
   justify-content: space-between;
   align-items: center;
   position: fixed;
