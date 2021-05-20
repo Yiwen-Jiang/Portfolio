@@ -105,13 +105,28 @@ a.button {
     color: rgba(255,255,255,.8);
     border-radius: .5em;
     padding: 1em 2em .8em 2em;
-    margin: .5em;
+    margin: 1.5em .5em 5em .5em;
     text-transform: uppercase;
     letter-spacing: 0.15em;
     font-size: .9em;
 }
 a.button:hover {
     background-color: rgba(0,0,0,.5);
+}
+
+a.button-2 {
+  display: inline-block;
+  background-color: rgba(0,0,0,.3);
+  color: rgba(255,255,255,.8);
+  border-radius: .5em;
+  padding: 1em 2em .8em 2em;
+  margin: .5em;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  font-size: .9em;
+}
+a.button-2:hover {
+  background-color: rgba(0,0,0,.5);
 }
 
 /* SITE-STRUCTURE */
@@ -141,7 +156,7 @@ a.button:hover {
 
 .site-footer {
     text-align: center;
-    padding: .25em 0 1.5em 0;
+    padding: .5em 0 2.5em 0;
     text-transform: uppercase;
     letter-spacing: 0.15em;
 }
